@@ -10,7 +10,12 @@ createRoot(document.getElementById("root")).render(
     <App />
     <div className="cardContainer">
       {cards.map((card) => (
-        <Card key={card.id} title={card.title} description={card.description} />
+        <Card
+          key={card.id}
+          title={card.title}
+          description={card.description}
+          link={card.link}
+        />
       ))}
     </div>
   </StrictMode>
